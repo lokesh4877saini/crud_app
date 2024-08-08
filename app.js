@@ -7,9 +7,9 @@ app.use(cors());
 app.use(express.json());
 // connection
 require('./DB/connect')
-const port = process.env.PORT||5000;
+const PORT = process.env.PORT || 5000;
 // route
 app.use(router);
-app.listen(port,()=>{
-    console.log(`server is http://localhost:${port}`)
+app.listen(PORT,()=>{
+    console.log(`server is http://localhost:${PORT}`)
 })
